@@ -33,5 +33,16 @@ public class AboutMe {
 
         boolean driverLicence = true;
         System.out.println("Do you have driver licence: " + driverLicence);
+
+        /* Output:
+        I am 21 years old.
+        I was born in 1999
+        I walk 8000 every day
+        Student card number: 22356515
+        My surname first letter - Y
+        My max speed: 42.1
+        My max jump height: 1.24
+        Do you have driver licence: true
+        */
     }
 }

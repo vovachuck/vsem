@@ -45,7 +45,7 @@ public class Palindrome {
 
     public static void main(String[] args) {
 
-        String text = "My gym!a";
+        String text = "My gym!";
         System.out.println(text);
 
         // Clear string from any symbols
@@ -60,5 +60,15 @@ public class Palindrome {
 
         System.out.println("---------- Third way ----------");
         System.out.println(isPalindrome3(text));
+
+        /* Output:
+        My gym!
+        ---------- First way ----------
+        true
+        ---------- Second way ----------
+        true
+        ---------- Third way ----------
+        true
+        */
     }
 }
