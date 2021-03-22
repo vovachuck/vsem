@@ -17,11 +17,11 @@ public class Student extends Person {
     private String departmentName;
     private String universityName;
     private long studentCardNumber;
-    private boolean livesInDorm;
+    private boolean isLivesInDorm;
     private boolean isStipendiat;
     private String modeOfStudy; // like full-Time Or part-Time
     private double schoolCertificateScore;
     private double entryAveragePoint;
-    private int placeAmongStudents;
+    private boolean isBeneficiary;
 
 }
