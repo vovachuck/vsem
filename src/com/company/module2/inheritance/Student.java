@@ -17,7 +17,7 @@ public class Student extends Person {
     private String departmentName;
     private String universityName;
     private long studentCardNumber;
-    private boolean isLivesInDorm;
+    private boolean isLivingInDorm;
     private boolean isStipendiat;
     private String modeOfStudy; // like full-Time Or part-Time
     private double schoolCertificateScore;
