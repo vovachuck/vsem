@@ -109,4 +109,13 @@ public class Monitor extends Rectangle {
         return Objects.hash(super.hashCode(), resolution, matrixType, refreshRate, hasSpeakers, productionCost);
     }
 
+    public double getPrice(){
+
+        if(matrixType.equals("IPS")){
+            return refreshRate * 0.1 + productionCost;
+        }
+
+        return refreshRate * 0.05 + productionCost;
+    }
+
 }
