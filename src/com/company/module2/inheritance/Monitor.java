@@ -2,6 +2,8 @@ package com.company.module2.inheritance;
 
 import com.company.module2.design.Rectangle;
 
+import java.util.Objects;
+
 /**
   @author   Volodymyr Lakusta
   @project   vsem
@@ -92,4 +94,19 @@ public class Monitor extends Rectangle {
                 ", productionCost=" + productionCost +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Monitor monitor = (Monitor) o;
+        return refreshRate == monitor.refreshRate && hasSpeakers == monitor.hasSpeakers && Double.compare(monitor.productionCost, productionCost) == 0 && resolution.equals(monitor.resolution) && matrixType.equals(monitor.matrixType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), resolution, matrixType, refreshRate, hasSpeakers, productionCost);
+    }
+
 }
