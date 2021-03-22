@@ -1,4 +1,4 @@
-package com.company;
+package com.company.module1;
 /**
   @author   Volodymyr Lakusta
   @project   vsem
