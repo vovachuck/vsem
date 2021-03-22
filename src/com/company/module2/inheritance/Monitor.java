@@ -16,28 +16,28 @@ public class Monitor extends Rectangle {
     private String matrixType; //Type of display matrix like IPS, TN or VA
     private int refreshRate;
     private boolean hasSpeakers;
-    private double price;
+    private double productionCost;
 
     public Monitor() {
     }
 
     public Monitor(String resolution, String matrixType, int refreshRate,
-                   boolean hasSpeakers, double price) {
+                   boolean hasSpeakers, double productionCost) {
         this.resolution = resolution;
         this.matrixType = matrixType;
         this.refreshRate = refreshRate;
         this.hasSpeakers = hasSpeakers;
-        this.price = price;
+        this.productionCost = productionCost;
     }
 
     public Monitor(int length, int width, String resolution, String matrixType,
-                   int refreshRate, boolean hasSpeakers, double price) {
+                   int refreshRate, boolean hasSpeakers, double productionCost) {
         super(length, width);
         this.resolution = resolution;
         this.matrixType = matrixType;
         this.refreshRate = refreshRate;
         this.hasSpeakers = hasSpeakers;
-        this.price = price;
+        this.productionCost = productionCost;
     }
 
     public String getResolution() {
@@ -72,12 +72,12 @@ public class Monitor extends Rectangle {
         this.hasSpeakers = hasSpeakers;
     }
 
-    public double getPrice() {
-        return price;
+    public double getProductionCost() {
+        return productionCost;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setProductionCost(double productionCost) {
+        this.productionCost = productionCost;
     }
 
 
@@ -89,7 +89,7 @@ public class Monitor extends Rectangle {
                 ", matrixType='" + matrixType + '\'' +
                 ", refreshRate=" + refreshRate +
                 ", hasSpeakers=" + hasSpeakers +
-                ", price=" + price +
+                ", productionCost=" + productionCost +
                 '}';
     }
 }
