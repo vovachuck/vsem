@@ -16,8 +16,8 @@ public class Person {
     private String surName;
     private LocalDate dateOfBirth;
     private String gender;
-    private int height;
-    private int weight;
+    private double height;
+    private double weight;
     private boolean hasDriverLicence;
     private String nationality;
     private String maritalStatus;
