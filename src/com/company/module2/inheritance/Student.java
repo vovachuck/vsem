@@ -14,7 +14,7 @@ public class Student extends Person {
     private int yearOfStudy;
     private String groupName;
     private String chairName;
-    private String departmentName;
+    private String majorName;
     private String universityName;
     private long studentCardNumber;
     private boolean isLivingInDorm;
