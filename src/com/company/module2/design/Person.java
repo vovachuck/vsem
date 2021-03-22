@@ -13,7 +13,7 @@ import java.time.LocalDate;
 public class Person {
     private String firstName;
     private String lastName;
-    private String surName;
+    private String patronymic;
     private LocalDate dateOfBirth;
     private String gender;
     private double height;
