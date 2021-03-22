@@ -21,7 +21,7 @@ public class Student extends Person {
     private boolean isStipendiat;
     private String modeOfStudy; // like full-Time Or part-Time
     private double schoolCertificateScore;
-    private double entryAveragePoint;
+    private String curatorName;
     private boolean isBeneficiary;
 
 }
