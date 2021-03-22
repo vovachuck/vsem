@@ -1,4 +1,7 @@
 package com.company.module2.design;
+
+import java.time.LocalDate;
+
 /**
   @author   Volodymyr Lakusta
   @project   vsem
@@ -11,13 +14,13 @@ public class Person {
     private String firstName;
     private String lastName;
     private String surName;
-    private int age;
+    private LocalDate dateOfBirth;
     private String gender;
     private int height;
     private int weight;
     private boolean hasDriverLicence;
     private String nationality;
-    private boolean married;
+    private String maritalStatus;
     private boolean hasChild;
     private boolean hasJob;
     private String speakingLanguages;
