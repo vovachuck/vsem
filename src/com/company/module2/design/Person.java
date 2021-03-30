@@ -1,6 +1,7 @@
 package com.company.module2.design;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 /**
   @author   Volodymyr Lakusta
@@ -146,5 +147,9 @@ public class Person {
 
     public void setSpeakingLanguages(String speakingLanguages) {
         this.speakingLanguages = speakingLanguages;
+    }
+
+    public int age(){
+        return (int) ChronoUnit.DAYS.between(dateOfBirth, LocalDate.now());
     }
 }
